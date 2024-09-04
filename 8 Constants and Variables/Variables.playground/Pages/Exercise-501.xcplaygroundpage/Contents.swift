@@ -20,8 +20,48 @@
  \
  After each round, `print` some statements that your opponents might make. If you can, use the value of your current score in their statements.
  */
+let single = 1
+let double = 2
+let triple = 3
 
 
+
+var myScore = 501
+var opponentScore = 501
+
+var myRoundScore = 0
+myRoundScore += 1 * single
+myRoundScore += 5 * single
+myRoundScore += 20 * single
+
+myScore -= myRoundScore
+myRoundScore = 0
+opponentScore -= 34
+
+print("Opponent: Nice, but not a single mulitplier")
+
+myRoundScore += 5 * double
+myRoundScore += 20 * double
+myRoundScore += 1 * double
+
+
+myScore -= myRoundScore
+opponentScore -= 42
+
+print("Opponent: ",myRoundScore, "!, better... that double 20 was helpful")
+myRoundScore = 0
+
+myRoundScore += 5 * triple
+myRoundScore += 20 * triple
+myRoundScore += 1 * triple
+
+myScore -= myRoundScore
+opponentScore -= 26
+
+
+print("Oppenent: Nice triple 20!")
+
+myScore < opponentScore
 
 /*:
  

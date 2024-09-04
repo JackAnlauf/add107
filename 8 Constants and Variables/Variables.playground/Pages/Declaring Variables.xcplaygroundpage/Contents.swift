@@ -20,6 +20,7 @@ currentLocation = "California"
  */
 // Assign a new value
 
+currentLocation = "Illinois"
 /*:
  In most ways, constants and variables are the same:
 - Both use the same rules for names

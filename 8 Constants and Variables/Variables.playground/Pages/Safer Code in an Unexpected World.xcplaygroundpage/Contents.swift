@@ -37,8 +37,5 @@ scoreForGary
  - callout(Exercise): The program above has a problem. Each player hit the same targets, but at the end of the game, Rob has fewer points than Gary. Can you find the problem?\
  _Hint: Try defining the target scores at the start of the program with `let` instead of `var`_
 */
-
-
-
-
+//The issue is in line 23 where the "scoreForRed" is changed by "scoreForGreen". it's being redefined when it shouldn't
 //: [Previous](@previous)  |  page 10 of 13  |  [Next: Wrapup](@next)

@@ -5,7 +5,7 @@
 No.
 
 Sometimes you'll write code that's expecting the world to be a certain way. Imagine you ask a friend what they'd like to drink, and then you start working really hard to deliver it.*/
-var friendBeverageChoice = "coffee"
+let friendBeverageChoice = "coffee"
 
 driveAcrossTown()
 buyACoffeeMaker()

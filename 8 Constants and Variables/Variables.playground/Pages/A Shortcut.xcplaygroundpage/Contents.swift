@@ -7,7 +7,7 @@
 var score = 0
 
 // Take the current value of `score`, add 2, assign the result to `score` as its new value
-score = score + 2
+score += 2
 /*:
  This type of operation happens often enough that Swift has a special operator `+=` which is a shorthand that combines addition (`+`) and assignment (`=`) into one combined operation.
 
@@ -39,10 +39,11 @@ let space = " "
 
 var statement = ""
 statement += word1
-
-
-
-
-
-
+statement += space
+statement += word2
+statement += space
+statement += word3
+statement += space
+statement += word4
+statement
 //: [Previous](@previous)  |  page 5 of 13  |  [Next: Confusing Changes](@next)
