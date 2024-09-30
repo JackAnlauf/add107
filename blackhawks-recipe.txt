@@ -1,0 +1,84 @@
+
+RECIPE
+
+    
+         INGREDIENTS
+     
+     1.     The roster dictionary, key = number: value = [strings]
+            index i
+            i = 0  player name
+            i = 1  position
+            i = 2  shooting hand
+            i = 3  height in inches
+            i = 4  weight in pounds
+            i = 5  birthday as "yyyy-mm-dd"
+            i = 6  birthplace
+     2.     for loops to iterate over the roster
+     3.     string components function                https://developer.apple.com/documentation/foundation/nsstring/1413214-components
+     4.     swifts sorted() function.
+     5.     swift date formatter function
+     5.     swift max() function
+     6.     Dictionaries to hold names of months, their numeric representation, and their value
+     
+    
+     
+    
+
+
+
+        INSTRUCTIONS
+     
+     
+     
+            TO SORT BY COUNTRY. 
+            initialize a dictionary of the type String:[String]... example ["USA":["Anderson",...]]
+            Iterate over the entire roster. use the index of the birthplace and the last component of that birthplace string.
+            if the country is unique to the dictionary, add it as a key and its value as a list, with its first entry as the player name from that unique country.
+            if not unique, add that player name to the corresponding country.
+            
+            initialize our final list of sorted players
+            iterate through the original dictionary by the country (key), for each country, iterate through the country roster (value), adding each player to
+            our final list. The final list should be all sorted by country.
+     
+     
+    
+     
+            TO SORT BY AGE.
+            https://www.advancedswift.com/date-formatter-cheatsheet-formulas-swift/#convert-string-to-date
+            https://developer.apple.com/documentation/swift/array/sorted(by:)
+            https://stackoverflow.com/questions/24130026/how-to-sort-an-array-of-custom-objects-by-property-value
+     
+            first create a formatter with the matching format to the format of the string in the age entry in the roster values. it is critical the the formats in the roster are ALL consistent.
+            then use the sorted function to create a comparator for the age value of each player, using the formatter to convert the strings into comparable date objects.
+            then use a simple forloop to loop over the new sorted dictionary, adding the name of the player to the list.
+     
+     
+            TO CALCULATE THE AVERAGE AGE OF PLAYERS.
+     
+            keep a total age sum in a variable
+            keep a player count in a varaible
+            keep the current date in a constant
+            loop through the roster
+            convert, using the previous formatter, the age of the current player into a date object.
+            subtract player date  from current date, add the difference to the running total, incriment the sum total in the form of days.
+            https://stackoverflow.com/questions/40075850/swift-3-find-number-of-calendar-days-between-two-dates
+            
+            after completing the for loop, convert the days sum into years and days through modulo and regular division
+     
+            
+            TO GET AVERAGE HEIGHT.
+            
+            the roster has each player listed in inches.
+            loop through the roster, increasing a running sum of the total players and cummulative height, then find the average
+            
+     
+     
+            TO GET MOST COMMON MONTH.
+     
+            keep a dictionary for each month, it's value is the count
+            loop through the roster, using string components like before, finding different months and adding to the months dictionary
+            use the dictionary to find the most common month
+     
+     
+
+     
